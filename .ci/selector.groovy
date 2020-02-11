@@ -86,6 +86,6 @@ def githubCheckNotify(String status) {
                  description: "${params.GITHUB_CHECK_NAME} ${status.toLowerCase()}",
                  status: "${status}",
                  targetUrl: "${env.RUN_DISPLAY_URL}",
-                 sha: params.GITHUB_CHECK_SHA1, account: 'elastic', repo: params.GITHUB_CHECK_REPO, credentialsId: env.JOB_GIT_CREDENTIALS
+                 sha: params.GITHUB_CHECK_SHA1, account: 'v1v', repo: params.GITHUB_CHECK_REPO, credentialsId: env.JOB_GIT_CREDENTIALS
   }
 }
